@@ -86,9 +86,11 @@ def strassen_mul(A, B, n, n_min):
         
         return strassen_result(C11, C12, C21, C22, n)
 
-A = create_sample_matrix(4)
-B = create_sample_matrix(4)
+size = 8
+
+A = create_sample_matrix(size)
+B = create_sample_matrix(size)
 
 print(A, '\n')
 print(B, '\n')
-print(strassen_mul(A, B, 4, 2))
+print(strassen_mul(A, B, size, 2))
