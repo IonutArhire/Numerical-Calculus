@@ -23,7 +23,7 @@ while iters != 0:
     k = 0
 
     while True:
-        delta_x_num, delta_x = compute_delta_x_secant(x0, x1, poly, h)
+        delta_x_num, delta_x = compute_delta_x_secant(x0, x1, poly, h, g1)
         
         if abs(delta_x_num) <= e:
             delta_x = 10**(-5)

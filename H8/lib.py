@@ -86,7 +86,14 @@ def g(poly, x, h):
         + plug_in_poly(poly, x - 2 * h)) \
         / (2 * h)
 
-def compute_delta_x_secant(x0, x1, poly, h):
+def g1(poly, x, h):
+    return (-plug_in_poly(poly, x + 2 * h) \
+        + 8 * plug_in_poly(poly, x + h) \
+        - 8 * plug_in_poly(poly, x - h) \
+        + plug_in_poly(poly, x - 2 * h)) \
+        / (12 * h)
+
+def compute_delta_x_secant(x0, x1, poly, h, g):
     num =  g(poly, x1, h) - g(poly, x0, h)
     return (num, (x1 - x0) * g(poly, x1, h) / num)
 
