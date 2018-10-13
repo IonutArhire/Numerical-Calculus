@@ -1,0 +1,2 @@
+- Computing the precision of the environment
+- Strassen's matrix multiplication
