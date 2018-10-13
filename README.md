@@ -1,2 +1,2 @@
-# Numerical-Calculus
-for homework
+# Numerical-Calculus #
+Implementing classical numerical calculus algorithms
